@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="mt-5 forma">
+            <input type="text" id="ismi" class="form-control mb-3" placeholder="Ismingiz">
+            <input type="text" id="familiyasi" class="form-control mb-3" placeholder="Familiya">
+            <input type="text" id="guruhi" class="form-control mb-3" placeholder="Guruhi">
+            <select class="form-select mb-5" id="jinsi" aria-label="Default select example">
+                <option selected>Jinsingizni tanlang</option>
+                <option value="Erkak">Erkak</option>
+                <option value="Ayol">Ayol</option>
+              </select>
+            <button class="btn btn-success w-100 mt-2" type="submit">Add</button>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Group</th>
+                    <th scope="col">Gender</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+
+        <template id="template">
+            <tr>
+                <td class="number"></td>
+                <td class="ismi"></td>
+                <td class="familiyasi"></td>
+                <td class="guruhi"></td>
+                <td class="jinsi"></td>
+            </tr>
+        </template>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
